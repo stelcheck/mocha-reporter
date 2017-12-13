@@ -33,6 +33,17 @@ Installation
 npm install --save mocha-reporter
 ```
 
+Optionally, you may also add the following at the entrypoint of your test suite:
+
+```javascript
+require('mocha-reporter').hook()
+```
+
+This will add an extra line containing the file name and line number
+of the test upon error:
+
+!(with file name)[./screenshots/file-name.png]
+
 Usage
 -----
 
